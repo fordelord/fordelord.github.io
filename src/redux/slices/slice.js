@@ -16,7 +16,7 @@ export const counterSlice = createSlice({
         let x = state.value
         state.chocolateCounter=0
         state.obertka = 0 + state.pudgeAddObertki;
-        while (state.value > 0) {
+        while (state.value >= state.cost) {
             state.value -=state.cost; 
             state.chocolateCounter+=1;
             state.obertka ++;
