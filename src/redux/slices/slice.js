@@ -20,7 +20,7 @@ export const counterSlice = createSlice({
             state.value -=state.cost; 
             state.chocolateCounter+=1;
             state.obertka ++;
-            if(state.obertka === 3) {
+            while(state.obertka >= 3) {
                 state.obertka = 0; 
                 // state.value += state.cost;
                 state.chocolateCounter+=1
